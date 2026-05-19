@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boîtes de Pétri — Présentation Microbes</title>
+<style>
+  body { font-family: Georgia, serif; background: #f8f5f0; color: #1a1a1a; margin: 0; padding: 0; }
+  header { background: #2d6a4f; color: white; padding: 2rem; text-align: center; }
+  header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
+  header p { margin: 0.5rem 0 0; opacity: 0.85; font-size: 0.95rem; }
+  main { max-width: 750px; margin: 0 auto; padding: 2rem 1rem; }
+  .card { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 2.5rem; overflow: hidden; }
+  .card-header { background: #2d6a4f; color: white; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 1rem; }
+  .card-number { background: white; color: #2d6a4f; font-weight: bold; font-size: 1.1rem; border-radius: 50%; width: 2.2rem; height: 2.2rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .card-title { font-size: 1.2rem; font-weight: bold; }
+  .card-body { padding: 1.4rem 1.5rem; }
+  .section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin: 1.2rem 0 0.4rem; font-weight: bold; }
+  .colonies { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 0.5rem; }
+  .colony { border-left: 3px solid #95d5b2; padding: 0.5rem 0.8rem; background: #f0faf5; border-radius: 0 6px 6px 0; font-size: 0.93rem; line-height: 1.6; }
+  .colony em { font-style: italic; color: #1a5c3a; font-weight: 600; }
+  .context { font-size: 0.92rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 1rem; margin-top: 0.8rem; }
+  .context em { font-style: italic; color: #1a5c3a; font-weight: 600; }
+  footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🔬 Boîtes de Pétri</h1>
+  <p>Gélose LB · Incubation 7 jours à température ambiante</p>
+</header>
+
+<main>
+
+<!-- BOITE 1 -->
+<div class="card" id="boite-1">
+  <div class="card-header">
+    <div class="card-number">1</div>
+    <div class="card-title">Tableau blanc</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies noires · plates · bord fondu · muqueuses · ~5 mm · abondantes · avec moisissure</strong><br>
+        Aspect caractéristique d'une moisissure fongique du genre <em>Cladosporium</em> sp. : coloration noire, texture muqueuse et bords diffus suggèrent un champignon opportuniste ubiquitaire.
+      </div>
+      <div class="colony">
+        <strong>Colonies blanches · bombées · bord régulier · sèches · ~1 cm · nombre moyen · avec moisissure</strong><br>
+        Morphologie compatible avec <em>Aspergillus niger</em> à un stade précoce, ou plus probablement avec <em>Bacillus subtilis</em> pour la partie bactérienne blanche sèche associée.
+      </div>
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · lisses · ~1 mm · peu nombreuses · sans moisissure</strong><br>
+        Pigmentation orange et petite taille évoquent <em>Micrococcus luteus</em> ou <em>Kocuria rosea</em>, deux bactéries à Gram positif communes sur les surfaces sèches.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · bombées · bord régulier · lisses · ~1 cm · nombre moyen · sans moisissure</strong><br>
+        Morphologie classique de <em>Staphylococcus epidermidis</em> : forme bombée, couleur crème, surface lisse et aspect mat typiques de cette espèce.
+      </div>
+      <div class="colony">
+        <strong>Colonies blanc-jaune · en dôme · bord dentelé · poudreuses · ~5 mm · uniques · sans moisissure</strong><br>
+        Le bord dentelé et la texture poudreuse sont caractéristiques de <em>Bacillus cereus</em>, dont les colonies sporulées présentent cet aspect rugueux distinctif.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      Le tableau blanc est une surface très manipulée (marqueurs, effaçage fréquent) qui accumule des particules de l'air ambiant de la salle. La diversité fongique élevée s'explique par les spores en suspension dans l'air, qui se déposent sur toute surface horizontale ou verticale peu nettoyée. Les bactéries de type <em>Staphylococcus</em> et <em>Micrococcus</em> proviennent vraisemblablement du contact cutané des utilisateurs.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 2 -->
+<div class="card" id="boite-2">
+  <div class="card-header">
+    <div class="card-number">2</div>
+    <div class="card-title">Poubelle</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · lisses · ~1 mm · peu nombreuses · sans moisissure</strong><br>
+        Pigmentation orange vive compatible avec <em>Serratia marcescens</em>, une bactérie à Gram négatif produisant un pigment rouge-orangé (prodigiosine), fréquente dans les environnements humides et organiques.
+      </div>
+      <div class="colony">
+        <strong>Colonies noir/blanc · bombées · bord filamenteux · duveteuses · ~2 cm · uniques · avec moisissure</strong><br>
+        Morphologie fongique caractéristique de <em>Mucor mucedo</em> ou <em>Rhizopus stolonifer</em> : colonies volumineuses, duveteuses, bicolores (sporanges noirs sur mycélium blanc), fréquents sur matières organiques en décomposition.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · bombées · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Aspect typique de <em>Staphylococcus epidermidis</em> ou d'une levure du genre <em>Candida</em> sp., toutes deux résistantes aux environnements variés et présentes sur de nombreuses surfaces.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La poubelle est l'un des environnements les plus enrichis en matière organique : débris alimentaires, papiers, emballages. Ces substrats favorisent les champignons décomposeurs comme <em>Rhizopus stolonifer</em> et les bactéries productrices de pigments comme <em>Serratia marcescens</em>, qui prospèrent dans les milieux riches et légèrement humides.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 3 -->
+<div class="card" id="boite-3">
+  <div class="card-header">
+    <div class="card-number">3</div>
+    <div class="card-title">Chaise</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies orange · plates · bord fondu · transparentes · lisses · ~5 mm · peu nombreuses · sans moisissure</strong><br>
+        Colonies translucides à pigment orangé évoquant <em>Micrococcus luteus</em> ou une souche de <em>Chryseobacterium</em> sp., bactéries saprophytes présentes sur les surfaces sèches fréquemment touchées.
+      </div>
+      <div class="colony">
+        <strong>Colonies noires · plates · bord régulier · duveteuses · ~1 cm · peu nombreuses · avec moisissure</strong><br>
+        Aspect typique de <em>Aspergillus niger</em> : moisissure noire très répandue dans l'air intérieur, dont les spores se déposent sur toutes les surfaces.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · bombées · bord dentelé · poudreuses · ~2 cm · nombre moyen · sans moisissure</strong><br>
+        Morphologie compatible avec <em>Bacillus cereus</em> : bord dentelé irrégulier et texture poudreuse due à la sporulation sont des traits distinctifs de cette espèce tellurique.
+      </div>
+      <div class="colony">
+        <strong>Colonies noir-centre/blanc · en dôme · bord régulier · duveteuses · ~1 cm · nombre moyen · avec moisissure</strong><br>
+        Coloration bicolore et aspect duveteux caractéristiques d'<em>Aspergillus fumigatus</em>, dont le centre sporulé est plus sombre que la périphérie mycélienne.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · bombées · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Aspect lisse et bombé caractéristique de <em>Staphylococcus epidermidis</em>, commensale de la peau humaine omniprésente sur les surfaces de contact.
+      </div>
+      <div class="colony">
+        <strong>Colonies rouges · plates · bord fondu · transparentes · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Pigmentation rouge et colonie plate translucide évoquant <em>Serratia marcescens</em> ou <em>Rhodotorula mucilaginosa</em>, une levure rose-rouge fréquente sur les surfaces humides.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La chaise est une surface de contact prolongé avec le corps humain (vêtements, peau). Elle accumule ainsi des micro-organismes cutanés comme <em>Staphylococcus epidermidis</em>, mais aussi des spores fongiques atmosphériques (<em>Aspergillus</em> spp.) qui se déposent sur toute surface au repos. La diversité observée reflète bien ce double apport : flore cutanée et flore aéroportée.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 4 -->
+<div class="card" id="boite-4">
+  <div class="card-header">
+    <div class="card-number">4</div>
+    <div class="card-title">Poignée de frigo</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies vert-centre/blanc · plates · bord filamenteux · duveteuses · ~3 cm · uniques · avec moisissure</strong><br>
+        Coloration verte et morphologie filamenteuse très caractéristiques de <em>Penicillium chrysogenum</em> (ou <em>Penicillium rubens</em>), l'une des moisissures les plus communes en milieu intérieur, productrices de pénicilline.
+      </div>
+      <div class="colony">
+        <strong>Colonies noires · plates · bord régulier · duveteuses · ~1 cm · uniques · avec moisissure</strong><br>
+        Moisissure noire à bord net compatible avec <em>Cladosporium cladosporioides</em>, champignon saprophyte très fréquent dans les réfrigérateurs et sur les aliments.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~1 mm · uniques · sans moisissure</strong><br>
+        Petite colonie jaune lisse évoquant <em>Micrococcus luteus</em>, bactérie pigmentée présente sur la peau et les surfaces sèches.
+      </div>
+      <div class="colony">
+        <strong>Colonies blanc/noir-au-bout · filamenteuses · transparentes · duveteuses · ~1 mm · couvrant toute la boîte · avec moisissure</strong><br>
+        Mycélium aérien blanc avec extrémités sporulées noires, très évocateur de <em>Rhizopus microsporus</em> : moisissure à croissance rapide et envahissante, retrouvée dans les environnements froids et humides comme les réfrigérateurs.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La poignée du frigo est une surface particulièrement propice aux moisissures : elle est touchée avec des mains potentiellement en contact avec des aliments, dans un environnement de condensation et d'humidité. <em>Penicillium</em> et <em>Cladosporium</em> sont des espèces emblématiques des réfrigérateurs, capables de se développer à basses températures. La contamination croisée avec des aliments stockés est une explication logique pour leur présence sur la poignée.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 5 -->
+<div class="card" id="boite-5">
+  <div class="card-header">
+    <div class="card-number">5</div>
+    <div class="card-title">Table</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies blanches · bombées · bord régulier · sèches · ~2 cm · abondantes · avec moisissure</strong><br>
+        Colonies volumineuses, sèches et abondantes typiques de <em>Bacillus subtilis</em>, bactérie sporulante ubiquitaire très résistante, capable de coloniser rapidement les surfaces sèches.
+      </div>
+      <div class="colony">
+        <strong>Colonies noires · plates · bord régulier · duveteuses · ~1 cm · abondantes · avec moisissure</strong><br>
+        Abondance de colonies noires duveteuses caractéristique d'<em>Aspergillus niger</em>, moisissure extrêmement répandue dans les espaces intérieurs et extérieurs.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~1 mm · peu nombreuses · sans moisissure</strong><br>
+        Petites colonies jaunes lisses évoquant <em>Micrococcus luteus</em>, habitant classique de l'air ambiant et des surfaces.
+      </div>
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Morphologie compatible avec <em>Kocuria rosea</em>, coccobacille à Gram positif pigmenté présent sur les surfaces manipulées.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · lisses · ~3 mm · peu nombreuses · sans moisissure</strong><br>
+        Aspect crème lisse plat typique de <em>Staphylococcus epidermidis</em> ou de <em>Staphylococcus haemolyticus</em>, tous deux commensaux de la peau humaine.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La table est une surface horizontale très exposée : les spores fongiques atmosphériques s'y déposent par sédimentation gravitaire, ce qui explique l'abondance d'<em>Aspergillus niger</em>. Les bactéries sporulantes comme <em>Bacillus subtilis</em> sont également très présentes dans les poussières intérieures. La diversité de cette boîte reflète bien la flore mixte d'une surface de travail partagée.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 6 -->
+<div class="card" id="boite-6">
+  <div class="card-header">
+    <div class="card-number">6</div>
+    <div class="card-title">Bouton d'ascenseur</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies noir/blanc · bombées · bord filamenteux · duveteuses · ~15 mm · peu nombreuses · avec moisissure</strong><br>
+        Grande colonie bicolore et duveteuse caractéristique de <em>Mucor circinelloides</em> : champignon mucoracé à croissance rapide, dont le mycélium blanc porte des sporanges sombres.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Petites colonies jaunes évoquant <em>Micrococcus luteus</em>, présent sur la peau et facilement transféré par contact digital.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · lisses · ~3 mm · nombre moyen · sans moisissure</strong><br>
+        Morphologie lisse et crème caractéristique de <em>Staphylococcus epidermidis</em>, l'une des bactéries les plus fréquemment isolées sur les surfaces tactiles humaines.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      Le bouton d'ascenseur est l'une des surfaces les plus touchées par de nombreuses personnes différentes. C'est un réservoir de flore cutanée humaine : <em>Staphylococcus epidermidis</em> et <em>Micrococcus luteus</em> y sont attendus. Paradoxalement, cette boîte présente peu de diversité, ce qui pourrait indiquer que la forte fréquentation entraîne une compétition entre espèces, ou que le prélèvement a été fait après un nettoyage partiel.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 7 -->
+<div class="card" id="boite-7">
+  <div class="card-header">
+    <div class="card-number">7</div>
+    <div class="card-title">Lavabo</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies crème-calcaire · plates · bord régulier · lisses · ~1 cm · abondantes · sans moisissure</strong><br>
+        Colonies crèmes abondantes et uniformes sur surface humide, caractéristiques de <em>Pseudomonas aeruginosa</em> (forme non pigmentée) ou de <em>Sphingomonas paucimobilis</em>, deux bactéries Gram négatif adaptées aux milieux aquatiques et résistantes à de nombreux désinfectants.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La forte homogénéité de cette boîte (une seule espèce dominante) est cohérente avec un environnement aquatique sélectif : le lavabo est régulièrement rincé à l'eau et exposé aux savons, ce qui élimine une grande partie de la flore et favorise les espèces résistantes à l'humidité et aux détergents, comme <em>Pseudomonas aeruginosa</em>. La présence d'une seule morphologie coloniale suggère une espèce bien adaptée à cet environnement particulier.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 8 -->
+<div class="card" id="boite-8">
+  <div class="card-header">
+    <div class="card-number">8</div>
+    <div class="card-title">Poignée de porte</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies en dégradé noir→blanc · plates · bord filamenteux · duveteuses · ~15 mm · uniques · avec moisissure</strong><br>
+        Très grande colonie à gradient de couleur et bord filamenteux typique de <em>Aspergillus fumigatus</em> : le centre sporulé (gris-noir) et la périphérie mycélienne blanche créent ce dégradé caractéristique.
+      </div>
+      <div class="colony">
+        <strong>Colonies marron-centre/auréole crème · bombées · bord régulier · duveteuses · ~15 mm · uniques · aspect incertain</strong><br>
+        Morphologie avec halo crème autour d'un centre marron évoquant <em>Alternaria alternata</em>, moisissure brune commune dans les environnements intérieurs et extérieurs.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~4 mm · abondantes · sans moisissure</strong><br>
+        Colonies jaunes abondantes et lisses caractéristiques de <em>Micrococcus luteus</em>, bactérie à Gram positif très fréquente sur les surfaces de contact cutané.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · lisses · ~2 mm · nombre moyen · sans moisissure</strong><br>
+        Morphologie typique de <em>Staphylococcus epidermidis</em>, présent en nombre sur toutes les surfaces fréquemment touchées par les mains.
+      </div>
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Petites colonies orange évoquant <em>Kocuria rosea</em> ou <em>Micrococcus luteus</em> (variant pigmenté), deux bactéries saprophytes de la peau.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La poignée de porte est, comme le bouton d'ascenseur, une surface de contact tactile fréquent. Sa particularité est d'être touchée d'un côté (extérieur/intérieur) selon l'usage, concentrant la flore cutanée. Les moisissures de grande taille (<em>Aspergillus fumigatus</em>, <em>Alternaria</em>) proviennent probablement des spores aéroportées qui se déposent sur la surface entre deux utilisations. La cohabitation de flore cutanée et fongique atmosphérique est attendue.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 9 -->
+<div class="card" id="boite-9">
+  <div class="card-header">
+    <div class="card-number">9</div>
+    <div class="card-title">Multiprise</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies blanc/noir-au-bout · filamenteuses · duveteuses · ~5 cm · une importante colonie · avec moisissure</strong><br>
+        Très grande colonie envahissante à mycélium blanc et sporulation noire aux extrémités, caractéristique de <em>Rhizopus stolonifer</em> : l'un des champignons à croissance la plus rapide en milieu de culture, capable d'envahir une boîte entière en quelques jours.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~2 mm · nombre moyen · sans moisissure</strong><br>
+        Morphologie compatible avec <em>Micrococcus luteus</em>, bactérie cutanée résistante aux conditions sèches, fréquente sur les surfaces électroniques.
+      </div>
+      <div class="colony">
+        <strong>Colonies rouges · plates · bord régulier · lisses · ~1 mm · peu nombreuses · sans moisissure</strong><br>
+        Petites colonies rouges évoquant <em>Serratia marcescens</em>, bactérie opportuniste qui produit un pigment rouge (prodigiosine) et survit sur les surfaces sèches.
+      </div>
+      <div class="colony">
+        <strong>Colonies noir/marron · plates · bord régulier · diffuses · ~2 mm · peu nombreuses · aspect incertain</strong><br>
+        Colonies sombres à bord diffus pouvant correspondre à <em>Cladosporium sphaerospermum</em>, une moisissure noire résistante aux environnements secs et chauds, connue pour coloniser les équipements électroniques.
+      </div>
+      <div class="colony">
+        <strong>Colonies blanc-jaunâtre · bombées · bord denté · rugueuses · ~1 cm · peu nombreuses · sans moisissure</strong><br>
+        Morphologie rugueuse à bord dentelé caractéristique de <em>Bacillus cereus</em> ou <em>Bacillus thuringiensis</em>, deux sporulantes résistantes à la dessiccation et à la chaleur.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      La multiprise est un environnement chaud (dissipation thermique) et poussiéreux. La chaleur et l'accumulation de poussière créent un microclimat favorable aux moisissures résistantes comme <em>Cladosporium</em> et aux spores bactériennes. La présence de <em>Rhizopus stolonifer</em> sous forme d'une unique et massive colonie envahissante illustre bien la capacité de certains champignons à monopoliser les ressources d'un milieu de culture face à des compétiteurs bactériens.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 10 -->
+<div class="card" id="boite-10">
+  <div class="card-header">
+    <div class="card-number">10</div>
+    <div class="card-title">Imprimante</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · transparentes · lisses · ~4 mm · nombre moyen · sans moisissure</strong><br>
+        Colonies translucides à pigmentation crème caractéristiques de <em>Staphylococcus epidermidis</em> ou de <em>Staphylococcus hominis</em>, deux commensales de la peau fréquemment retrouvées sur les appareils manipulés.
+      </div>
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~2 mm · nombre moyen · sans moisissure</strong><br>
+        Morphologie de <em>Micrococcus luteus</em>, bactérie pigmentée en jaune particulièrement résistante aux conditions sèches et aux UV, habituelle sur les surfaces de bureautique.
+      </div>
+      <div class="colony">
+        <strong>Colonies blanc-jaunâtre · bombées · bord filamenteux · duveteuses · ~5 mm · uniques · avec moisissure</strong><br>
+        Colonie isolée mais filamenteuse compatible avec <em>Penicillium expansum</em>, moisissure commune dans les espaces intérieurs qui produit des spores facilement aéroportées.
+      </div>
+      <div class="colony">
+        <strong>Formes allongées arrondies orange entourées de blanc, ~1 mm (3 amas)</strong><br>
+        Ces structures très particulières en amas allongés avec un centre orange et une périphérie blanche pourraient correspondre à des microcolonies de <em>Streptomyces</em> sp. : ces bactéries filamenteuses forment des structures complexes et des pigments caractéristiques sur gélose, et sont parfois retrouvées dans la poussière.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      L'imprimante est un appareil que l'on touche régulièrement (chargement du papier, commandes) et qui aspire de l'air ambiant pour son refroidissement, accumulant ainsi poussières et spores fongiques dans ses filtres et sur sa surface. La flore cutanée dominante (<em>Staphylococcus</em>, <em>Micrococcus</em>) reflète les manipulations répétées. Les structures allongées particulières méritent un examen microscopique pour confirmation.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 11 -->
+<div class="card" id="boite-11">
+  <div class="card-header">
+    <div class="card-number">11</div>
+    <div class="card-title">Eau potable</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies blanc-calcaire · plates · bord régulier · transparentes · lisses · ~1 cm · abondantes · sans moisissure</strong><br>
+        Colonies blanches abondantes et uniformes sur milieu riche LB, caractéristiques de <em>Pseudomonas fluorescens</em> ou de <em>Sphingomonas paucimobilis</em> : deux bactéries Gram négatif adaptées aux eaux traitées, capables de former des biofilms dans les canalisations et résistantes aux faibles concentrations de chlore.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      L'eau du robinet, même potable, n'est pas stérile : elle contient des bactéries résiduelles capables de survivre à la chloration. Les espèces qui persistent dans l'eau traitée sont généralement des Gram négatifs résistants, comme <em>Pseudomonas fluorescens</em>. La présence d'une seule morphologie coloniale est cohérente avec la sélection exercée par le traitement de l'eau, qui élimine la plupart des espèces et laisse place aux plus résistantes.
+    </div>
+  </div>
+</div>
+
+<!-- BOITE 12 -->
+<div class="card" id="boite-12">
+  <div class="card-header">
+    <div class="card-number">12</div>
+    <div class="card-title">Sol du laboratoire</div>
+  </div>
+  <div class="card-body">
+    <div class="section-label">Colonies observées</div>
+    <div class="colonies">
+      <div class="colony">
+        <strong>Colonies jaunes · plates · bord régulier · lisses · ~2 mm · nombre moyen · sans moisissure</strong><br>
+        Morphologie de <em>Micrococcus luteus</em>, présent dans les poussières et les particules de sol intérieur.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · lisses · ~2 mm · nombre moyen · sans moisissure</strong><br>
+        Aspect compatible avec <em>Staphylococcus epidermidis</em> ou <em>Staphylococcus haemolyticus</em>, apportés par les chaussures ou la desquamation cutanée.
+      </div>
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Petites colonies orange évoquant <em>Kocuria rosea</em>, bactérie pigmentée tellurique et cutanée.
+      </div>
+      <div class="colony">
+        <strong>Colonies orange · plates · bord régulier · translucides · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Colonies orange translucides pouvant correspondre à <em>Serratia marcescens</em> ou à <em>Chryseobacterium indologenes</em>, bactéries Gram négatif retrouvées dans les sols humides.
+      </div>
+      <div class="colony">
+        <strong>Colonies rouges · plates · bord régulier · lisses · ~2 mm · peu nombreuses · sans moisissure</strong><br>
+        Pigmentation rouge évoquant <em>Serratia marcescens</em> (prodigiosine) ou <em>Rhodotorula glutinis</em>, une levure rouge-orange commune dans les sols et l'air ambiant.
+      </div>
+      <div class="colony">
+        <strong>Colonies crème · plates · bord régulier · opaque · bizarres · ~5 mm · uniques · sans moisissure</strong><br>
+        La morphologie décrite comme "citadelle vue de haut" et la texture bizarre évoquent <em>Streptomyces griseus</em> : ces bactéries forment des colonies très structurées avec des reliefs concentriques caractéristiques sur gélose, et sont naturellement présentes dans les sols.
+      </div>
+    </div>
+    <div class="section-label">Contexte</div>
+    <div class="context">
+      Le sol de laboratoire est une surface particulièrement riche en biodiversité microbienne : il reçoit les retombées de toutes les activités réalisées dans la pièce, les apports extérieurs via les chaussures, et les particules de sol tellurique. La présence probable de <em>Streptomyces griseus</em> est particulièrement intéressante : ces actinobactéries productrices d'antibiotiques sont caractéristiques des sols, et leur présence sur le sol d'un laboratoire est cohérente avec les apports de terre extérieure.
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>Présentation microbes · Gélose LB · 12 boîtes de Pétri</footer>
+</body>
+</html>
